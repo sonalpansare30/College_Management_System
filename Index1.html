@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #menu {
+            background: #343434;
+            color: #eee;
+            height: 50px;
+            border-bottom: 4px solid #eeeded
+        }
+        
+        #menu ul,
+        #menu li {
+            margin: 0 0;
+            padding: 0 0;
+            list-style: none
+        }
+        
+        #menu ul {
+            height: 35px
+        }
+        
+        #menu li {
+            float: left;
+            display: inline;
+            position: relative;
+            font: bold 12px Arial;
+            border-right: 1px solid #444;
+            border-left: 1px solid #111;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            margin-top: 10px;
+        }
+        
+        #menu a {
+            display: block;
+            line-height: 35px;
+            padding: 0 14px;
+            text-decoration: none;
+            color: #eee;
+        }
+        /* #menu li:hover>a, */
+        
+        #menu li a:hover {
+            /* background: #111 */
+            background: #e54e4b;
+        }
+        /* #menu input {
+            display: none;
+            margin: 0 0;
+            padding: 0 0;
+            width: 80px;
+            height: 35px;
+            opacity: 0;
+            cursor: pointer
+        } */
+        
+        #menu ul.menus {
+            height: auto;
+            width: 180px;
+            background: #111;
+            position: absolute;
+            z-index: 99;
+            display: none;
+            border: 0;
+        }
+        
+        #menu ul.menus li {
+            display: block;
+            width: 100%;
+            font: 12px Arial;
+            text-transform: none;
+        }
+        
+        #menu li:hover ul.menus {
+            display: block
+        }
+        
+        #menu ul.menus a:hover {
+            /* background: #333; */
+            background: #e54e4b;
+        }
+        
+        #menu ul.menus .submenu {
+            display: none;
+            position: absolute;
+            left: 180px;
+            /* background: #111; */
+            background: #e54e4b;
+            top: 0;
+            width: 180px;
+        }
+        
+        #menu ul.menus .submenu li {
+            background: #111;
+        }
+        
+        .brand-img {
+            padding-right: 200px;
+        }
+        
+        body {
+            /* background-image: url(resources/coepfinal1.jpg); */
+            background-color: rgb(240, 238, 235);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <ul id='menu'>
+            <li>
+
+                <img src="resources/logo.png" alt="SPCOE" class="brand-img" height="35px" width="35px"></li>
+            <li><a class='home' href='/'>Home</a></li>
+            <li><a class='prett' href='#' title='Menu'>About us</a>
+                <ul class='menus'>
+                    <li class='has-submenu'><a class='prett' href='Dropdown 1'>About College</a> </li>
+                    <li><a href='#'>Our Mission and Vision</a></li>
+                    <li><a href='#'>Goals and Objectives</a></li>
+                </ul>
+            </li>
+
+            <li><a class='prett' href='#' title='Menu'>Academics</a>
+                <ul class='menus'>
+                    <li class='has-submenu'><a class='prett' href='Dropdown 1'>Under Grauates</a> </li>
+                    <li><a href='#'>Post Grauates</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#">Student Zone</a>
+                <ul class='menus'>
+                    <li class='has-submenu'><a class='prett' href='Dropdown 1'>Admission</a> </li>
+                    <li><a href='#'>Study Material</a></li>
+                    <li><a href='#'>Examination Result</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+</body>
+
+</html>

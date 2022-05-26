@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Theme</title>
+    <style>
+        .navbar-nav li:hover>ul.dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-submenu {
+            position: relative;
+        }
+        
+        .dropdown-submenu>.dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+        /* rotate caret on hover */
+        
+        .dropdown-menu>li>a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <img src="resources/logo.png" alt="SPCOE" class="brand-img" height="35px" width="35px"></li>
+            <butthon class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </butthon>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#">About Us</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Vision&mission.html">Our Mission and Vision</a></li>
+                            <li><a class="dropdown-item" href="#">Goals and Objectives</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Courses </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">UG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">BE</a></li>
+                                    <li><a class="dropdown-item" href="#">BCS</a></li>
+                                    <li><a class="dropdown-item" href="#">BCA</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">PG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">ME</a></li>
+                                    <li><a class="dropdown-item" href="#">MCS</a></li>
+                                    <li><a class="dropdown-item" href="#">MCA</a></li>
+
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Students Corner</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Students_corner.html">Application Forms</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <!-- <a href="login.html" class="nav-link">
+                            <i class="fas fa-user-times"></i>Login
+                        </a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="col-md-6 m-auto text-center">
+                        ◊ VISION ◊
+
+                        We aspire to carry forward the Vision of our founders of providing affordable quality education, while expanding our academic horizons to bring the institution on par with global leaders in the field of higher education.
+                        
+                        
+                        
+                        ◊ MISSION ◊
+                        
+                        Strive for excellence in education in keeping with the motto of the college, “Knowledge is Power” and prepare young minds for imbibing knowledge, skills and sensitivity.
+                        
+                        ◊ GOALS ◊
+                        To impart quality education through traditional and innovative learning practices.
+                        To provide a dynamic and creative academic environment, to tap and nurture talent for the developmentof professional skills and an all round personality.
+                        To inculcate good moral values and a sense of nationalism, in keeping with the glorious heritage of theInstitute..
+                        ◊ OUR VALUES ◊
+                        
+                        1. Commitment to Scholarship and Learning
+                        
+                        We honor scholarship in all of its aspects: artistic, cultural, scientific, and applied. We support professional development and training of our staff and administrators; and encourage and nurture intellectual curiosity in our students.
+                        
+                        2. Commitment to Excellence
+                        
+                        The quality of our academic programmes is central to our educational mission. We set high standards for ourselves in all of our actions and activities; assess our performance and acknowledge both individual and group contributions to the fulfillment of our mission.
+                        
+                        3. Respect for All People
+                        
+                        Our policies, programmes and actions affirm the worth and personal dignity of every member of the college community and contribute to a campus climate of civility, collegiality, trust, and reasoned debate. We take pride in the diversity of our community.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
