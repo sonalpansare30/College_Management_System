@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Teacher Registration Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+ .radio-inline
+ {
+   display: inline-block;
+ }
+</style>
+</head>
+<body>
+
+<div class="container border border-2 bg-light">
+  <form >
+    <div class="row">
+    <div class="col-lg-10 text-center ">
+  <h4 class="text-center">Teacher Registration Form</h4>
+    </div>
+  <div class="col-lg-2 text-center ">
+    <button type="button" class="btn btn-primary  fs-5"><a href="Index.html" class="text-white  fs-5 bi bi-house spacer ">Home</a></button>
+    </div>
+</div>
+    <div class="row">
+      <div class="col-lg-3">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+    </div>
+    <div class="col-lg-3">
+      <label for="Father's Name / Spouse Name">Father's Name / Spouse Name</label>
+      <input type="text" class="form-control" id="Father's Name / Spouse Name" placeholder="Enter Father's Name / Spouse Name" name="Father's Name / Spouse Name">
+    </div>
+    <div class="col-lg-3">
+      <label class="form-label" for="Mobile">Contact Number</label>
+      <input type="number" class="form-control form-control-sm" id="mobile" placeholder="Enter Mobile Number" name="mobile">
+  </div>
+  <div class="col-lg-3">
+    <label for="birthday">Date Of Birth</label>
+    <input type="date" id="birthday" name="birthday" class="form-control">
+  </div>
+  </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <label for="email">Email-ID</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="col-lg-3">
+        <label for="pwd">Password</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+    <div class="col-lg-3">
+        <p class="form-label" style="padding-left: 15px;">Language Known</p>
+        <label class="radio-inline" class="form-label" style="padding-left: 15px;"> <input  type="radio" name="lngKnown" id="eng"
+                value="eng" checked> English </label>
+        <label class="radio-inline"  class="form-label" style="padding-left: 10px;"> <input type="radio" name="lngKnown"
+                id="hind" value="hind"> Hindi </label>
+        <label class="radio-inline"  class="form-label" style="padding-left: 10px;"> <input type="radio" name="lngKnown"
+                id="mar" value="mar" > Marathi </label>
+    </div>
+    <div class="col-lg-3"  style="padding-left: 30px;">
+      <label for="Age" >Age</label>
+      <input type="text" class="form-control" id="Age" placeholder="" name="Age">
+    </div> 
+    </div>
+<div>    <br/></div>
+    <div class="row">
+      <h5>Education Details</h5>
+    <div class="col-lg-3">
+        <label for="course">Qualification</label>
+        <select class="form-control ">
+      <option selected><--Select Qualification--></option>
+      <option>MCA</option>
+      <option>MSC</option>
+      <option>BCA</option>
+      <option>BSC</option>
+  </select>
+      </div>
+   
+     <div class="col-lg-3">
+      <label for="inst">Institute </label>
+      <textarea class="form-control rounded-0" id="txtarea" rows="3"></textarea>
+    </div>
+    <div class="col-lg-3">
+      <label for="brd">Board </label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter Board" name="brd">
+    </div>
+  </div>
+ <div> <br/></div>
+  <div class="row">
+    <h5>Experience</h5>
+    <div class="col-lg-3">
+      <label for="period">Period</label>
+      <input type="text" class="form-control" id="period" placeholder="Enter period" name="period">
+    </div>
+    <div class="col-lg-3">
+      <label for="address">Organization & Address</label>
+      <textarea class="form-control rounded-0" id="address" rows="3"></textarea>
+    </div>
+    <div class="col-lg-3">
+      <label for="desg">Designation</label>
+      <input type="text" class="form-control" id="desg" placeholder="Enter Designation" name="desg">
+    </div>
+    <div class="col-lg-3">
+      <label for="achv">Personal Achievements ( if any)</label>
+      <input type="text" class="form-control" id="achv" placeholder="Enter Achievements" name="achv">
+    </div>
+    </div>
+   <div> <br/></div>
+    <div class="row">
+      <h5>Upload Documents</h5>
+    <div class="col-lg-3">
+      <label for="exp">Experiance Letter(if any)</label>
+      <input type="file" id="exp" name="exp">
+    </div>
+    <div class="col-lg-3">
+      <label for="cert">UG/PG Cerificate</label>
+      <input type="file" id="cert" name="cert">
+    </div>
+    <div class="col-lg-3">
+      <label for="adhar">Adhar Card</label>
+      <input type="file" id="adhar" name="adhar">
+    </div>
+    </div>
+    <div>    <br/></div>
+    <div class="row">
+      <h5>Declaration</h5>
+  <input type="checkbox" id="Declaration" >
+ <label  class="chkBefore" for="Declaration"> The information provided in this form is correct to the best of my knowledge.
+    In case of any information furnished by me is found to be incorrect, the college has the right to take any action.</label>
+    </div>
+    <div class="row">
+      <div class="col-lg-5"></div>
+      <div class="col-lg-2">  <button type="submit" class="btn btn-primary">Submit</button></div>
+      <div class="col-lg-5"></div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
